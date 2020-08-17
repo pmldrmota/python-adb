@@ -105,7 +105,7 @@ def main():
     if 'info_cb' in argspec.args:
         kwargs['info_cb'] = _InfoCb
     if 'progress_callback' in argspec.args and progressbar:
-        bar = progressbar.ProgessBar(
+        bar = progressbar.ProgressBar(
             widgets=[progressbar.Bar(), progressbar.Percentage()])
         bar.start()
 
